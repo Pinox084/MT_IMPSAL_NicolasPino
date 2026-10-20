@@ -97,6 +97,8 @@ La disponibilidad de datos puede depender de las condiciones de acceso de cada s
 
 Los datos del proyecto se organizan en dos directorios principales: coleccion/ y data/.
 
+Nota sobre los datos: Las carpetas coleccion/ y data/ se encuentran excluidas del control de versiones mediante .gitignore debido al tamaño de los archivos (NetCDF y registros sanitarios). Para ejecutar los notebooks de manera local, es necesario crear ambas carpetas manualmente en la raíz del proyecto y poblar con la información correspondiente de SERNAPESCA y Copernicus Marine.
+
 coleccion/: almacena los datos oceanográficos descargados desde Copernicus Marine. Esta carpeta contiene subcarpetas correspondientes a cada centro de cultivo, en las cuales se guardan los archivos en formato NetCDF (.nc) con las variables oceanográficas obtenidas.
 
 data/: contiene los archivos CSV con los conjuntos de datos utilizados en los análisis, así como el archivo Excel con los registros parasitarios empleados para construir los datasets. Estos archivos constituyen la base para los procesos de limpieza, integración y análisis estadístico posteriores.
